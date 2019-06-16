@@ -96,7 +96,7 @@
             <argument type="collection" /> <!-- filter types map -->
             <argument type="iterator" /> <!-- filter types guessers -->
         </service>
-        <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Filter\FilterRegistry" alias="easyadmin.filter.registry" />
+        <service id="EasyCorp\Bundle\EasyAdminBundle\Form\Filter\FilterRegistry" alias="easyadmin.filter.registry" public="true"/>
 
         <service id="easyadmin.filter.extension" class="Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension">
             <argument /><!-- All services with tag "easyadmin.filter.type" are stored in a service locator -->
