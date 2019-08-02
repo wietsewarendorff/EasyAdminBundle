@@ -14,7 +14,7 @@
         }) %}
     {% endif %}
 
-    {% if form.vars.errors|length > 0 %}
+    {% if not compound and form.vars.errors|length > 0 %}
         {{ form_errors(form) }}
     {% endif %}
 
